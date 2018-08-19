@@ -1,0 +1,26 @@
+﻿​Taxable income (R)	​Rates of tax (R)
+0 – 195 850	18% of taxable income
+195 851 – 305 850	35 253 + 26% of taxable income above 195 850
+305 851 – 423 300	63 853 + 31% of taxable income above 305 850
+423 301 – 555 600	100 263 + 36% of taxable income above 423 300
+555 601 – 708 310	147 891 + 39% of taxable income above 555 600
+708 311 – 1 500 000	207 448 + 41% of taxable income above 708 310
+1 500 001 and above	532 041 + 45% of taxable income above 1 500 000
+
+
+Tax Rebates ​2019	​
+​Primary	R14 067	
+​Secondary (65 and older)	​R7 713	
+​Tertiary (75 and older)	​R2 574	
+ 
+
+Tax Thresholds 2019
+Under 65	​R78 150
+​65 an older	​R121 000
+​75 and older	​R135 300
+
+Med taxCredits 2019
+R310 per month for the taxpayer who paid the medical scheme contributions
+​R310 per month for the first dependant
+​​​R209 per month for each additional dependant(s)
+ 

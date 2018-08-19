@@ -5,36 +5,25 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace WcfService1
+namespace TaxCalculator
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface ITestService
+    public interface ITaxService
     {
+        //[OperationContract]
+        //CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        [OperationContract]
-        string GetData(int value);
+        //[OperationContract]
+        //YourTaxDetails ShowTaxDetails(YourTaxDetails details, short age, bool annual = true);
 
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        //[OperationContract]
+        //YourTaxDetailsResponse ShowTaxPayableTakeHome(YourTaxDetails details, short age, bool annual = true, bool medical = false);
 
-        // TODO: Add your service operations here
-        [OperationContract]
-        double Add(double n1, double n2);
-
-        [OperationContract(Name ="DoSumsAsync")]
-        System.Threading.Tasks.Task<double> DoSumsAsync(double n1, double n2);
-
-        [OperationContract]
-        double Subtract(double n1, double n2);
-        [OperationContract]
-        double Multiply(double n1, double n2);
-        [OperationContract]
-        double Divide(double bigNumber, double smallNumber);
-
-        [OperationContract]
-        double ShowMyTakeHome(double earnings, double taxrate);
+        [OperationContract(Name = "ShowTaxPayableAsync")]
+        Task<YourTaxDetailsResponse> ShowTaxPayableTakeHomeAsync(YourTaxDetails details, short age, bool annual = true, bool medical = false);
     }
 
 
@@ -59,4 +48,5 @@ namespace WcfService1
             set { stringValue = value; }
         }
     }
+
 }
