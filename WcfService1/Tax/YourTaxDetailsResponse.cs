@@ -20,5 +20,8 @@ namespace TaxCalculator
 
         [DataMember(Order = 3)]
         public decimal EffectiveTaxRate { get; set; }
+
+        [DataMember(Order = 4)]
+        public decimal TaxableIncome { get; set; }
     }
 }

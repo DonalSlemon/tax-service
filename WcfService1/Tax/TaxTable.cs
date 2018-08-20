@@ -75,10 +75,10 @@ namespace TaxCalculator
             decimal taxpayable = 0;
             decimal basetax;
             decimal incomeAmountAboveThreshold;
-            decimal primaryrebate = Helpers.GetPrimaryRebateAsDecimal(yourage);
+            decimal primaryrebate = Helpers.GetPrimaryRebate(yourage);
             decimal effectiveTaxableIncome;
 
-            medicalTaxCreditRebate = medicaldetails != null ? Helpers.GetMedicalTaxRebateAsDecimal(medicaldetails, annual) : 0;
+            medicalTaxCreditRebate = medicaldetails != null ? Helpers.GetMedicalTaxRebate(medicaldetails, annual) : 0;
 
             //List of the lower & upper limits, base tax and percentage of taxation
             var incomeBands = Helpers.GetIncomeRangesStruct();

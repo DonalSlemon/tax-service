@@ -91,12 +91,15 @@ namespace TaxCalculator
                 return await Task<YourTaxDetailsResponse>.Factory.StartNew(() =>
                 {
                     yourtax = _taxTable.GetTaxAmountPayableStruct(earnings, age, racontribution, annual, details.Medical);
+                    var effectiveRate = Math.Round(Math.Round(yourtax, 2) / Math.Round(earnings - yourtax, 2) * 100 / 1, 2);
 
                     var response = new YourTaxDetailsResponse
                     {
-                        TaxPayable = (decimal)Math.Round(yourtax, 2),
-                        TakeHome = (decimal)Math.Round(earnings - yourtax, 2),
-                        TakeHomeLessRA = (decimal)Math.Round(earnings - (yourtax + racontribution), 2)
+                        TaxableIncome = Math.Round(earnings - racontribution, 2),
+                        TaxPayable = Math.Round(yourtax, 2),
+                        TakeHome = Math.Round(earnings - yourtax, 2),
+                        TakeHomeLessRA = Math.Round(earnings - (yourtax + racontribution), 2),
+                        EffectiveTaxRate = effectiveRate
                     };
                     return response;
                 });

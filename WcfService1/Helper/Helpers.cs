@@ -73,24 +73,13 @@ namespace TaxCalculator
             return ranges;
         }
 
-        internal static double GetMedicalTaxRebate(MedicalDetails medicaldetails, bool isAnnual = false)
-        {
-            double rebateamount = MedicalRebate(medicaldetails.HaveMedicalAid, medicaldetails.Dependants);
-            return isAnnual ? rebateamount * 12 : rebateamount;
-        }
-
-        internal static decimal GetMedicalTaxRebateAsDecimal(MedicalDetails medicaldetails, bool isAnnual = false)
+        internal static decimal GetMedicalTaxRebate(MedicalDetails medicaldetails, bool isAnnual = false)
         {
             decimal rebateamount = (decimal)MedicalRebate(medicaldetails.HaveMedicalAid, medicaldetails.Dependants);
             return isAnnual ? rebateamount * 12 : rebateamount;
         }
 
-        internal static double GetPrimaryRebate(short yourage)
-        {
-            return PrimaryRebate(yourage);
-        }
-
-        internal static decimal GetPrimaryRebateAsDecimal(short yourage)
+        internal static decimal GetPrimaryRebate(short yourage)
         {
             return (decimal)PrimaryRebate(yourage);
         }
