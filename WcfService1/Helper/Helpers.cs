@@ -22,7 +22,7 @@ namespace TaxCalculator
         /// <params>Second double ('item2') is UPPER boundary of income</params>
         /// <params>Third double ('item3') is base tax amount which applies to this band</params>
         /// <params>Fourth double ('item4') is tax percentage which applies to amount above threshold</params>
-        /// <returns>List of type Tuple containing lowerbound, upperbound, base tax, taxation perecentage</returns>
+        /// <returns>List of <see cref="Tuple"/> containing lowerbound, upperbound, base tax, taxation perecentage</returns>
         public static List<Tuple<double, double, double, double>> GetIncomeRanges()
         {
             List<Tuple<double, double, double, double>> ranges = new List<Tuple<double, double, double, double>>();
