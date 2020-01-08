@@ -16,12 +16,6 @@ namespace TaxCalculator
         //[OperationContract]
         //CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        //[OperationContract]
-        //YourTaxDetails ShowTaxDetails(YourTaxDetails details, short age, bool annual = true);
-
-        //[OperationContract]
-        //YourTaxDetailsResponse ShowTaxPayableTakeHome(YourTaxDetails details, short age, bool annual = true, bool medical = false);
-
         [OperationContract(Name = "ShowTaxPayableAsync")]
         Task<YourTaxDetailsResponse> ShowTaxPayableTakeHomeAsync(YourTaxDetails details, short age, bool annual = true, bool medical = false);
     }

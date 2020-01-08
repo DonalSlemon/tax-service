@@ -42,47 +42,12 @@ namespace TaxCalculator
         //    return composite;
         //}
 
-        //public YourTaxDetails ShowTaxDetails(YourTaxDetails details, short age, bool annual = true)
-        //{
-        //    //var tt = new TaxTable(taxTable);
-        //    var earnings = details.Earnings;
-        //    var racontribution = details.RaContrib;
-        //    var yourtax = taxTable.GetTaxAmountPayable(earnings, age, racontribution, annual);
-
-        //    details.AgeInYears = age;
-        //    details.TimePeriod = annual ? "Annual" : "Monthly";
-
-        //    return details;
-        //}
-
-        //public YourTaxDetailsResponse ShowTaxPayableTakeHome(YourTaxDetails details, short age, bool annual = true, bool medical = false)
-        //{
-        //    var tt = new TaxTable(taxTable);
-        //    var earnings = details.Earnings;
-        //    var racontribution = details.RaContrib;
-        //    age = details.AgeInYears;
-
-        //    medical = details.Medical.HaveMedicalAid ? true : false;
-        //    var numberOfDependants = medical ? details.Medical.Dependants : 0;
-
-        //    var yourtax = tt.GetTaxAmountPayableStruct(earnings, age, racontribution, annual, details.Medical);
-
-        //    YourTaxDetailsResponse response = new YourTaxDetailsResponse();
-
-        //    response.TaxPayable = Math.Round(yourtax, 2);
-        //    response.TakeHome = Math.Round(earnings - yourtax, 2);
-        //    response.TakeHomeLessRA = Math.Round(earnings - (yourtax + racontribution), 2);
-        //    //response.EffectiveTaxRate = Math.Round((yourtax + racontribution)/ earnings * 100/1, 2);
-
-        //    return response;
-        //}
-
         public async Task<YourTaxDetailsResponse> ShowTaxPayableTakeHomeAsync(YourTaxDetails details, short age, bool annual = true, bool medical = false)
         {
             var earnings = details.Earnings;
             var racontribution = details.RaContrib;
             age = details.AgeInYears;
-            medical = details.Medical.HaveMedicalAid ? true : false;
+            medical = (details.Medical != null && details.Medical.HaveMedicalAid) ? true : false;
             var numberOfDependants = medical ? details.Medical.Dependants : 0;
             decimal yourtax;
 

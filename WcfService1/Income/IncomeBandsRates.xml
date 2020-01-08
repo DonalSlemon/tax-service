@@ -2,44 +2,44 @@
 <IncomeBands xmlns="TaxCalculator.Income">
   <IncomeBand>
     <LowerLimit>0</LowerLimit>
-    <UpperLimit>195850</UpperLimit>
+    <UpperLimit>205900</UpperLimit>
     <BaseTaxAmount>0</BaseTaxAmount>
     <TaxRate>0.18</TaxRate>
   </IncomeBand>
   <IncomeBand>
-    <LowerLimit>195851</LowerLimit>
-    <UpperLimit>305850</UpperLimit>
-    <BaseTaxAmount>35253</BaseTaxAmount>
+    <LowerLimit>205901</LowerLimit>
+    <UpperLimit>321600</UpperLimit>
+    <BaseTaxAmount>37062</BaseTaxAmount>
     <TaxRate>0.26</TaxRate>
   </IncomeBand>
   <IncomeBand>
-    <LowerLimit>305851</LowerLimit>
-    <UpperLimit>423300</UpperLimit>
-    <BaseTaxAmount>63853</BaseTaxAmount>
+    <LowerLimit>321601</LowerLimit>
+    <UpperLimit>445100</UpperLimit>
+    <BaseTaxAmount>67144</BaseTaxAmount>
     <TaxRate>0.31</TaxRate>
   </IncomeBand>
   <IncomeBand>
-    <LowerLimit>423301</LowerLimit>
-    <UpperLimit>555600</UpperLimit>
-    <BaseTaxAmount>100263</BaseTaxAmount>
+    <LowerLimit>445101</LowerLimit>
+    <UpperLimit>584200</UpperLimit>
+    <BaseTaxAmount>105429</BaseTaxAmount>
     <TaxRate>0.36</TaxRate>
   </IncomeBand>
   <IncomeBand>
-    <LowerLimit>555601</LowerLimit>
-    <UpperLimit>708310</UpperLimit>
-    <BaseTaxAmount>147891</BaseTaxAmount>
+    <LowerLimit>584201</LowerLimit>
+    <UpperLimit>744800</UpperLimit>
+    <BaseTaxAmount>155505</BaseTaxAmount>
     <TaxRate>0.39</TaxRate>
   </IncomeBand>
   <IncomeBand>
-    <LowerLimit>708311</LowerLimit>
-    <UpperLimit>1500000</UpperLimit>
-    <BaseTaxAmount>207448</BaseTaxAmount>
+    <LowerLimit>744801</LowerLimit>
+    <UpperLimit>1577300</UpperLimit>
+    <BaseTaxAmount>218139</BaseTaxAmount>
     <TaxRate>0.41</TaxRate>
   </IncomeBand>
   <IncomeBand>
-    <LowerLimit>1500001</LowerLimit>
+    <LowerLimit>1577301</LowerLimit>
     <UpperLimit>10000000</UpperLimit>
-    <BaseTaxAmount>532041</BaseTaxAmount>
+    <BaseTaxAmount>559464</BaseTaxAmount>
     <TaxRate>0.45</TaxRate>
   </IncomeBand>
 </IncomeBands>

@@ -23,6 +23,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <ApplicationInsightsResourceId>/subscriptions/2749b878-4863-4fd6-8e21-b4af4eb7aaa1/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/WcfService1</ApplicationInsightsResourceId>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,7 +103,7 @@
     <Content Include="Income\IncomeBandsRates.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="SARS_Rates2019.txt" />
+    <Content Include="SARS_Rates2020.txt" />
     <Content Include="Tax\PrimaryTaxRebates.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
