@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TaxRebates xmlns="WcfService1.Tax">
   <TaxRebate>
-    <PrimaryRebate>14067</PrimaryRebate>
-    <PrimaryRebate65>7713</PrimaryRebate65>
-    <PrimaryRebate75>2574</PrimaryRebate75>
+    <PrimaryRebate>14220</PrimaryRebate>
+    <PrimaryRebate65>7794</PrimaryRebate65>
+    <PrimaryRebate75>2601</PrimaryRebate75>
     <MedicalTaxCredit>310</MedicalTaxCredit>
     <MedicalTaxCreditPlus>209</MedicalTaxCreditPlus>
   </TaxRebate>
